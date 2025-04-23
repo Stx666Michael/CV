@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% Structure Specification File
+% Version 1.0 (22/1/2015)
+%
+% This file has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage[a4paper, hmargin=15mm, vmargin=12mm]{geometry} % Use A4 paper and set margins
+
+\usepackage{fancyhdr} % Customize the header and footer
+
+\usepackage{hyperref} % Colors for links, text and headings
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+\setcounter{secnumdepth}{0} % Suppress section numbering
+
+\usepackage[proportional,scaled=1.064]{erewhon} % Use the Erewhon font for pdfLaTeX
+\usepackage[erewhon,vvarbb,bigdelims]{newtxmath} % Math font matching Erewhon
+\usepackage[utf8]{inputenc} % For inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{color} % Required for custom colors
+\definecolor{slateblue}{rgb}{0.17,0.22,0.34}
+
+\usepackage{sectsty} % Allows customization of titles
+\sectionfont{\color{slateblue}} % Color section titles
+
+\pagestyle{plain} % Use the custom page style through the document
+\renewcommand{\headrulewidth}{0pt} % Disable the default header rule
+\renewcommand{\footrulewidth}{0pt} % Disable the default footer rule
+
+\setlength\parindent{0pt} % Stop paragraph indentation
+
+% Non-indenting itemize
+\newenvironment{itemize-noindent}
+{
+\setlength{\leftmargini}{1em}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}
+{\end{itemize}}
+
+% Text width for tabbing environments
+\newlength{\smallertextwidth}
+\setlength{\smallertextwidth}{\textwidth}
+\addtolength{\smallertextwidth}{-2cm}
+
+\newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex} % Custom square bullet point definition
+\spaceskip 0.3em
+
+%----------------------------------------------------------------------------------------
+%	MAIN HEADER COMMAND
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\title}[1]{
+{\huge{\color{slateblue}\textbf{#1}}\\}\\ % Header section name and color
+}
+
+%----------------------------------------------------------------------------------------
+%	REMOVE UNUSED COMMANDS
+%----------------------------------------------------------------------------------------
+
+% Removed unused:
+% \newcommand{\job}[6]{...}
+% \newcommand{\skillgroup}[2]{...}
+% \newcommand{\interestsgroup}[1]{...}
+% \newcommand{\interest}[1]{...}
+% \newcommand{\tabbedblock}[1]{...}
+% \newcommand{\skillline}[2]{...}

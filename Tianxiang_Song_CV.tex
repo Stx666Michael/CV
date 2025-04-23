@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wilson Resume/CV
+% LaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt,a4paper]{article} % Reduced font size and set paper size
+
+% Margins and compactness
+\usepackage[margin=1.2cm,top=1.2cm,bottom=1.2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\setlist[itemize]{noitemsep,topsep=0pt,leftmargin=*,parsep=0pt,partopsep=0pt}
+\titlespacing*{\section}{0pt}{2pt}{2pt}
+\setlength{\parskip}{1pt}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{1em}
+
+% Essential packages
+\usepackage{fancyhdr} % Customize the header and footer
+\usepackage{hyperref} % Colors for links, text and headings
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{color} % Required for custom colors
+\usepackage{sectsty} % Allows customization of titles
+\definecolor{slateblue}{rgb}{0.17,0.22,0.34}
+\sectionfont{\color{slateblue}} % Color section titles
+\pagestyle{plain} % Use the custom page style through the document
+\renewcommand{\headrulewidth}{0pt} % Disable the default header rule
+\renewcommand{\footrulewidth}{0pt} % Disable the default footer rule
+\setcounter{secnumdepth}{0} % Suppress section numbering
+
+% Font
+\usepackage[proportional,scaled=1.064]{erewhon} % Use the Erewhon font for pdfLaTeX
+\usepackage[erewhon,vvarbb,bigdelims]{newtxmath} % Math font matching Erewhon
+\usepackage[utf8]{inputenc} % For inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+% Custom environments and commands
+\newenvironment{itemize-noindent}
+{
+\setlength{\leftmargini}{1em}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+}
+{\end{itemize}}
+
+% Text width for tabbing environments
+\newlength{\smallertextwidth}
+\setlength{\smallertextwidth}{\textwidth}
+\addtolength{\smallertextwidth}{-2cm}
+
+\newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex} % Custom square bullet point definition
+\spaceskip 0.3em
+
+% Main header command
+\renewcommand{\title}[1]{
+{\huge{\color{slateblue}\textbf{#1}}\\} % Header section name and color
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\title{Tianxiang Song (Michael) \href{https://github.com/Stx666Michael}{\includegraphics[width=0.022\textwidth]{images/github-logo.png}} \href{https://www.linkedin.com/in/tianxiang-song-113b3223a/}{\includegraphics[width=0.022\textwidth]{images/LinkedIn-logo.png}}}
+\end{center}
+
+\begin{center}
+\textbf{Address} London, UK \hspace{1.2cm} 
+\textbf{Mobile} +44 7511820745 \hspace{1.2cm} 
+\textbf{Email} \href{mailto:stx666michael@gmail.com}{stx666michael@gmail.com}
+\end{center}
+
+\rule{\textwidth}{0.2mm}\\[-0.5em]
+
+\begin{multicols}{2}
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+\section{Profile}
+A MSc graduate with strong background in Computing and AI. Passionate about software engineering and data analysis, with solid experience in machine learning, mobile development and web programming.
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\textbf{Areas of Expertise}: Computer Vision, Natural Language Processing, Mobile Application (iOS), Web Application, Robotic Process Automation, Deep Learning
+\vspace{2mm}
+
+\textbf{Programming Languages}: Python, Java, Swift, C, C++, HTML, CSS, JavaScript, Haskell, MATLAB
+\vspace{2mm}
+
+\textbf{Tools and Services}: Linux, SQL, Xcode, VS Code, Unity, Flask, Django, React (Native), Node.js, Docker, Git, AWS, WebSocket, FastAPI, UiPath, Adobe Suite, MS Office.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\textbf{Sep 2023 - Sep 2024}
+
+\href{https://www.imperial.ac.uk}{Imperial College London} \hfill \textit{Distinction}
+
+MSc Computing (Visual Computing and Robotics)
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Sep 2019 - Jul 2023}
+
+\href{https://www.nottingham.ac.uk}{The University of Nottingham} \hfill \textit{First Class}
+
+BSc Computer Science with Artificial Intelligence
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiences}
+
+\textbf{Apr 2025 - Present}
+
+\href{https://www.airawarelabs.com}{Air Aware Labs} \hfill \textit{AI Scientist}
+
+\begin{itemize-noindent}
+    \item Developed route optimization algorithm to reduce exposure to air pollutants.
+    \item \textbf{Skills}: Data Analysis, Machine Learning, Reinforcement Learning, Route Optimization
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Jan 2025 - Mar 2025}
+
+\href{https://visualistapp.com/}{Visualist} \hfill \textit{Machine Learning Intern}
+
+\begin{itemize-noindent}
+    \item Fine-tuned image inpainting models for object removal, aligning with target user's needs.
+    \item Dockerized and deployed image generation models for mask/prompt based editing.
+    \item \textbf{Skills}: Deep Learning, Computer Vision, Image Processing, Generative AI, Docker, FastAPI
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Dec 2024 - Jan 2025}
+
+\href{https://blitzo.co.uk}{Blitzo} \hfill \textit{Software Engineer Intern}
+
+\begin{itemize-noindent}
+    \item Enhanced and maintained mobile and web applications for a delivery booking platform.
+    \item Implemented functions that allow users to book multiple active orders, improving operation efficiency.
+    \item \textbf{Skills}: TypeScript, React, React Native
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Dec 2024 - Present}
+
+\href{https://outlier.ai}{Outlier} \hfill \textit{AI Trainer (part time)}
+
+\begin{itemize-noindent}
+    \item Optimized LLMs for coding expertise regarding instruction following, truthfulness and verbosity.
+    \item Conducted Python code reviews for correctness and efficiency.
+    \item \textbf{Skills}: Prompt Engineering, Large Language Models, Python, Code Review
+\end{itemize-noindent}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\textbf{Jan 2024 - Sep 2024}
+
+\href{https://github.com/Stx666Michael/MSc-Individual-Project}{OCR Applied to Modern Literature} \hfill \textit{Dissertation}
+
+\begin{itemize-noindent}
+    \item Developed OCR models to extract text from historical Chinese documents in modern literature.
+    \item Proposed synthetic data generation process to address the lack of training data.
+    \item \textbf{Skills}: Computer Vision, OCR, Synthetic Data Generation, Deep Learning, Python.
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Jun 2022 - May 2023}
+
+\href{https://github.com/Stx666Michael/LEGOAssemblyGuideAR}{Guided Assembly with Augmented Reality} \hfill \textit{Dissertation}
+
+\begin{itemize-noindent}
+    \item Developed an AR tutoring system as an iOS application to assist manual assembly tasks.
+    \item Trained and integrated deep learning models for instruction automation based on step completion.
+    \item \textbf{Skills}: Computer Vision, Augmented Reality, 3D modelling, SLAM, UX, UI, Xcode, Swift.
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Jun 2022 - Aug 2022}
+
+\href{https://github.com/Stx666Michael/DocumentDenoise}{Document Text Recognition} \hfill \textit{Researcher}
+
+\begin{itemize-noindent}
+    \item Implemented and applied state-of-the-art image denoise methods to camera-taken documents.
+    \item Proposed a table recognition algorithm for organizing recognized text in tabular format.
+    \item \textbf{Skills}: Computer Vision, Image Processing, Deep Learning, OCR, Python.
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Oct 2021 - May 2022}
+
+\href{https://github.com/Stx666Michael/Codenames_Multiplayer_AI_Online}{Codenames - Game AI} \hfill \textit{Technical Lead}
+
+\begin{itemize-noindent}
+    \item Emulated the \textit{Codenames} board game as a web application and deployed it in web servers.
+    \item Implemented AI players using NLP techniques.
+    \item Implemented client-server communication and multi-player synchronization.
+    \item \textbf{Skills}: HTML, JavaScript, Flask, AWS, Git, Natural Language Processing, Team Management.
+    %\item Awarded \textit{`Group Project Runner-Up Prize 2022'}
+\end{itemize-noindent}
+\vspace{2mm}
+
+%------------------------------------------------
+
+\textbf{Jun 2021 - Oct 2021}
+
+\href{https://github.com/Stx666Michael/logo_retrieval}{Trademark Retrieval Tools} \hfill \textit{Researcher}
+
+\begin{itemize-noindent}
+    \item Built a software collaborated with Ningbo Customs for validating trademarks on a given picture.
+    \item Fine-tuned deep neural networks (such as \textit{ResNet50}) on large datasets like \textit{Logo-2K+} as feature extractor.
+    \item Proposed a trademark retrieval algorithm.
+    \item \textbf{Skills}: Computer Vision, Deep Learning, Python.
+\end{itemize-noindent}
+
+\end{multicols}
+
+\end{document}
